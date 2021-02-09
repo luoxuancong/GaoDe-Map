@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <AddEdit @updateList="getShipLineList" />
+    <h4>地图数据</h4>
     {{mapData}}
   </div>
 </template>
@@ -14,12 +15,11 @@ export default {
   name: 'GdMapRouter',
   data () {
     return {
-      mapData:{}
+      mapData: []
     }
   },
   methods:{
     getShipLineList(data){
-      debugger
       this.mapData = data
     }
   }

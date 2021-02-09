@@ -4,11 +4,7 @@
  * @Author: luoxuancong
  * @Date: 2020-07-17 10:46:23
  * @LastEditors: luoxuancong
-<<<<<<< HEAD
- * @LastEditTime: 2021-02-09 15:24:30
-=======
- * @LastEditTime: 2021-02-09 18:51:37
->>>>>>> c02250effae8c22ef433fc61009a2570db823c24
+ * @LastEditTime: 2021-02-09 19:20:34
 -->
 <template>
   <div>
@@ -77,10 +73,6 @@
         </draggable>
       </div>
       <div class="footer center">
-<<<<<<< HEAD
-        <el-button @click="colseFn">取消</el-button>
-=======
->>>>>>> c02250effae8c22ef433fc61009a2570db823c24
         <el-button type="primary" @click="addRouter(routerList.length)">添加途经点</el-button>
         <el-button :loading="btnLoading" type="primary" @click="confirmFn">生成路线</el-button>
       </div>
@@ -97,41 +89,20 @@ export default {
     draggable
   },
   props: {
-    type: { // 编辑类型
-      type: String,
-      default: undefined
-    },
-    editRouter: {
+    editRouter: { // 编辑时传入地图数据
       type: Array,
       default: undefined
-    },
-    show: {
-      type: Boolean,
-      default: false
     }
   },
   data() {
     return {
       btnLoading: false,
-      render: Math.random(1000),
       map: undefined,
       AMap: undefined,
-      routerList: [
-
-      ]
+      routerList: [ ] // 生成的地图数据， 编辑数据时  将editRouter数据直接赋值到routerList
     }
   },
   watch: {
-    show(val) {
-      if (val) {
-        this.routerList = []
-        this.render = Math.random(1000)
-        this.initMapRouter()
-        if (this.editRouter.length > 0) {
-          this.routerList = Array.from(this.editRouter)
-        }
-      }
-    },
     editRouter(val) {
       this.routerList = []
       this.render = Math.random(1000)
@@ -186,12 +157,6 @@ export default {
       this.routerList = list
       this.render = Math.random(1000)
     },
-<<<<<<< HEAD
-    colseFn() {
-      this.$emit('update:show', false)
-    },
-=======
->>>>>>> c02250effae8c22ef433fc61009a2570db823c24
     initMapRouter() { // 初始化地图
       const that = this
       gdMap().then(

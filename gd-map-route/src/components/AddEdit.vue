@@ -4,11 +4,7 @@
  * @Author: luoxuancong
  * @Date: 2020-04-20 15:42:26
  * @LastEditors: luoxuancong
-<<<<<<< HEAD
- * @LastEditTime: 2021-02-09 18:38:48
-=======
- * @LastEditTime: 2021-02-09 18:53:47
->>>>>>> c02250effae8c22ef433fc61009a2570db823c24
+ * @LastEditTime: 2021-02-09 19:15:42
  -->
 <template>
   <div class="map-flex">
@@ -61,7 +57,7 @@
             size="small"
             type="primary"
             @click="saveBtnFn"
-            >保存</el-button
+            >生成地图数据</el-button
           >
         </el-form-item>
       </el-form>
@@ -775,10 +771,7 @@ export default {
   justify-content: space-between;
   & > div {
     width: 50%;
-<<<<<<< HEAD
-=======
     padding: 0 10px;
->>>>>>> c02250effae8c22ef433fc61009a2570db823c24
   }
 }
 /deep/ {
