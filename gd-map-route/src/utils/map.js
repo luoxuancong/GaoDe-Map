@@ -4,14 +4,14 @@
  * @Author: luoxuancong
  * @Date: 2021-02-06 10:59:28
  * @LastEditors: luoxuancong
- * @LastEditTime: 2021-02-06 10:59:46
+ * @LastEditTime: 2021-02-09 19:30:28
  */
 export default function gdMap() {
   return new Promise((resolve, reject) => {
     if (window.AMap) {
       resolve(window.AMap)
     } else {
-      const key = 'be9cb628b736816d4a3ebb15c9dd9a60'
+      const key = 'be9cb628b736816d4a3ebb15c9dd9a60' // 修改为自己申请的 key, 直接在高德开发平台申请即可
       var script = document.createElement('script')
       script.type = 'text/javascript'
       script.async = 'async'

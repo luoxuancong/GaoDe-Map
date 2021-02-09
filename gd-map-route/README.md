@@ -6,9 +6,13 @@
 
 ``` bash
 
+# git clone https://github.com/luoxuancong/GaoDe-Map.git
+
+# cd gd-map-route
+
+# 修改src\utils\map.js 中的地图key 值
 
 # 安装依赖文件用到了   "element-ui": "2.13.2"
-
 npm install
 
 # 运行开发环境
