@@ -4,7 +4,7 @@
  * @Author: luoxuancong
  * @Date: 2020-04-20 15:42:26
  * @LastEditors: luoxuancong
- * @LastEditTime: 2021-02-09 18:38:48
+ * @LastEditTime: 2021-02-09 18:53:47
  -->
 <template>
   <div class="map-flex">
@@ -771,6 +771,7 @@ export default {
   justify-content: space-between;
   & > div {
     width: 50%;
+    padding: 0 10px;
   }
 }
 /deep/ {

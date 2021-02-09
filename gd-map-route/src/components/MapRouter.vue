@@ -4,7 +4,7 @@
  * @Author: luoxuancong
  * @Date: 2020-07-17 10:46:23
  * @LastEditors: luoxuancong
- * @LastEditTime: 2021-02-09 15:24:30
+ * @LastEditTime: 2021-02-09 18:51:37
 -->
 <template>
   <div>
@@ -73,7 +73,6 @@
         </draggable>
       </div>
       <div class="footer center">
-        <el-button @click="colseFn">取消</el-button>
         <el-button type="primary" @click="addRouter(routerList.length)">添加途经点</el-button>
         <el-button :loading="btnLoading" type="primary" @click="confirmFn">生成路线</el-button>
       </div>
@@ -178,9 +177,6 @@ export default {
       const list = Array.from(this.routerList)
       this.routerList = list
       this.render = Math.random(1000)
-    },
-    colseFn() {
-      this.$emit('update:show', false)
     },
     initMapRouter() { // 初始化地图
       const that = this
