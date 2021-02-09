@@ -4,7 +4,11 @@
  * @Author: luoxuancong
  * @Date: 2020-04-20 15:42:26
  * @LastEditors: luoxuancong
+<<<<<<< HEAD
  * @LastEditTime: 2021-02-09 18:38:48
+=======
+ * @LastEditTime: 2021-02-09 18:53:47
+>>>>>>> c02250effae8c22ef433fc61009a2570db823c24
  -->
 <template>
   <div class="map-flex">
@@ -771,6 +775,10 @@ export default {
   justify-content: space-between;
   & > div {
     width: 50%;
+<<<<<<< HEAD
+=======
+    padding: 0 10px;
+>>>>>>> c02250effae8c22ef433fc61009a2570db823c24
   }
 }
 /deep/ {
