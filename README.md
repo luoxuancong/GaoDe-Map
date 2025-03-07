@@ -2,6 +2,8 @@
 
 > 高德地图大于16个途经点生成线路方案
 
+预览地址： http://map.lxc666.cn/#/
+
 ## Build Setup
 
 ``` bash
